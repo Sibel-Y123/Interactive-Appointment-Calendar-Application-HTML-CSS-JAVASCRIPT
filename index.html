@@ -1,0 +1,45 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mystyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="pageTitle">Welcome to our appointment page</h1>
+    <input id="filter" type="text" placeholder="Look for a name you want...">
+
+    <form id="appointmentForm" action="">
+        <input id="name" type="text" placeholder="your name?" required>
+        <input id="date" type="date" required>
+        <input id="time" type="time" required>
+        <select id="service" required>
+            <option value="">Opt for a service you would like to have</option>
+            <option value="hairdresser">Hairdresser</option>
+            <option value="dentist">Dentist</option>
+            <option value="doctor">Doctor</option>
+        </select>
+        <button id="addBtn" type="submit">Add an appointment</button>
+    </form>
+    <ul id="appointments"></ul>
+
+    <div id="modal" class="hidden">
+        <div class="modal">
+            <div class="modal-content">
+                <h2>The details of appointments</h2>
+                <p id="modalinfo"></p>
+                <button id="confirmBtn">Confirm</button>
+                <button id="cancelBtn">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <script src="myscript.js"></script>
+</body>
+</html>
+
+
+
